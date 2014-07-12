@@ -14698,33 +14698,25 @@ cljs.core.special_symbol_QMARK_ = function(a) {
   "letfn*", "letfn*", -110097810, null), null, new cljs.core.Symbol(null, "if", "if", 1181717262, null), null, new cljs.core.Symbol(null, "new", "new", -444906321, null), null, new cljs.core.Symbol(null, "ns", "ns", 2082130287, null), null, new cljs.core.Symbol(null, "deftype*", "deftype*", 962659890, null), null, new cljs.core.Symbol(null, "let*", "let*", 1920721458, null), null, new cljs.core.Symbol(null, "js*", "js*", -1134233646, null), null, new cljs.core.Symbol(null, "fn*", "fn*", -752876845, 
   null), null, new cljs.core.Symbol(null, "recur", "recur", 1202958259, null), null, new cljs.core.Symbol(null, "set!", "set!", 250714521, null), null, new cljs.core.Symbol(null, ".", ".", 1975675962, null), null, new cljs.core.Symbol(null, "quote", "quote", 1377916282, null), null, new cljs.core.Symbol(null, "throw", "throw", 595905694, null), null, new cljs.core.Symbol(null, "def", "def", 597100991, null), null], null), null), a);
 };
-var clj_js = {};
-clj_js.clj_js = cljs.core.clj__GT_js;
-goog.exportSymbol("clj_js.clj_js", clj_js.clj_js);
-clj_js.js_clj = function() {
-  var a = null, b = function(a) {
-    return cljs.core.js__GT_clj.call(null, a);
-  }, c = function(a, b) {
-    return cljs.core.js__GT_clj.call(null, a, new cljs.core.Keyword(null, "keywordize-keys", "keywordize-keys", 1310784252), b);
-  }, a = function(a, e) {
-    switch(arguments.length) {
-      case 1:
-        return b.call(this, a);
-      case 2:
-        return c.call(this, a, e);
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$core$IFn$_invoke$arity$1 = b;
-  a.cljs$core$IFn$_invoke$arity$2 = c;
-  return a;
-}();
-goog.exportSymbol("clj_js.js_clj", clj_js.js_clj);
+var func = {};
+func.vector = cljs.core.vector;
+goog.exportSymbol("func.vector", func.vector);
 
 },{}],2:[function(require,module,exports){
 
-var love = require('clj-transform');
+/**
+var _ = require('clj-transform').clj_js;
+var func = require('clj-func').func;
+window._ = _;
 
-window.love = love;
 
-},{"clj-transform":1}]},{},[2])
+window.func = func;
+
+var mori = require('mori-js').mori;
+
+window._ = mori;
+
+*/
+var func = require('clj-func').func;
+window._ = func;
+},{"clj-func":1}]},{},[2])

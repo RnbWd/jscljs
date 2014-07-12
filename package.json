@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^4.2.0",
-    "bud": "^1.0.4"
+    "bud": "^1.0.4",
+    "lodash-node": "^2.4.1"
   }
 }
